@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prateek Chauhan</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="logo1.png" type="image/icon type">
+
+</head>
+<body>
+    <header class="header sticky">
+        <div class="header-logo-container">
+            <div class="logo-image">
+                <img src="logo1.png" alt="logo image" class="logo">
+            </div>
+            <span class="logo-name">Prateek Chauhan</span> 
+        </div>
+        
+
+        <nav class="navbar">
+            <ul class="navbar-lists">
+                <li><a class="navbar-link home-link" href="#home">Home</a></li>
+                <li><a class="navbar-link about-link" href="#about"  >About</a></li>
+                <li><a class="navbar-link project-link" href="#project" >Projects</a></li>
+                <li><a class="navbar-link contact-link" href="#contact">Contact</a></li></ul>
+        </nav>
+        <div class="mobile-navbar-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section section" >
+            <div class="container grid grid-two-col">
+                <div class="hero-section-data">
+                    <p class="hero-top-line">Hey!, I'm</p>
+                    <h1 class="hero-heading">Prateek Chauhan</h1>
+                    <p class="hero-data">A passionate Data Analyst.</p>
+                    <div class=" button ">
+                    <!-- <button class="btn btn-projects project-scroll">View Projects</button> -->
+                    <button class="btnIcon btn-projects project-scroll"><a href="https://www.linkedin.com/in/prateek-chauhan-291301218/" target="_blank"><img style="height: 30px; width: 30px;" src="linkedin.png" alt="LinkedIn" /></a></button>
+                    <button  class="btnIcon btn-projects project-scroll"><a href="https://github.com/pratp-123" target="_blank"><img style="height: 30px; width: 30px;" src="github.png" alt="LinkedIn" /></a></button>
+                  </div>
+                </div>
+                <div class="section-hero-image">
+                    <img src="mypic.JPG" alt="Profile Picture" class="hero-img" />
+                    
+                  </div>
+                  
+            </div>
+        </section>
+    </main>
+
+
+    <div class="about-top about-section">
+      
+     
+      <h2 class="about-heading common-heading">About Me</h2>
+  
+    
+      <p class="about-top-data common-data"> Here you will find more information about me and my skills.</p>
+    </div>
+    <section class="about section">
+      <div class="container grid grid-two-col about-grid">
+        <div class="about-data">
+          <h3 class="common-heading below481">Get to know me!</h3>
+          <p class="about-full-data">
+            I'm a dedicated and enthusiast <b> Data Analyst </b>with a passion for transforming complex datasets into actionable insights.
+             Check out my work in the <b>Projects</b> section. I have honed my abilities to extract, clean, and analyze data using various tools 
+             like <b>Python</b>, <b>SQL</b> and <b>Excel</b>.
+          
+          <br />
+          
+          With a strong attention to <b>detail</b> and a <b>problem-solving mindset</b>, I'm open to the Job  opportunities where I can apply my analytical skils to tackle real-world challenges. 
+          </p>
+          <button class="btn btn-contact contact-scroll">Contact</button>
+        </div> 
+        <div class="about-skill-container">
+          <div class="about-skill">
+            <h3 class="common-heading below481">My Skils</h3>
+            <div class="skill">Excel</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Effective Communication</div>
+            <div class="skill">Problem-Solving</div>
+            <div class="skill">Python</div>
+            <div class="skill">Power bi</div>
+
+            <a href="https://drive.google.com/file/d/1H5ruEGg1IljEgJqEvrvCc7MGCOCQMbig/view?usp=drive_link" target="_blank">
+              <button class="btn btn-resume">Download Resume</button></a>
+        </div>
+        </div> 
+        
+        </div>
+      </div>
+
+    </section>
+
+
+    <div class="about-top projectHeading-section" >
+      <h2 class="about-heading common-heading">Projects</h2>
+     
+      <p class="about-top-data common-data"> Here you will find some of my personal 
+        projects that I created.</p>
+    </div>
+    <div >
+      <div class="conatiner project-section grid-two-col">
+        <div>
+          <img  src="crop-rec.jfif" alt="Project Picture" class="project-image " />
+        </div>
+        <div class="about-data">
+          <h4 style="margin-top: 50px;" class="project-heading">Crop reccomendation system using ML</h4>
+          <p class="about-full-data project-detail">
+           - Top 5 crop according to minerals present.<br/>
+           -  Top 5 crop according to minerals present.<br/>
+           - Different types of ML algoriths evaluated.<br/>
+           - Outliar handling, EDA, Visualization.<br/>
+           
+           
+          </p>
+          <a href="https://github.com/pratp-123/Edubridge_data_analytics_prateek" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">View Project</button></a>
+        </div>
+      </div>
+     </div>
+   
+    
+    
+     
+    <div class="contact-top contact-section">
+      <h2 class="contact-heading common-heading">Contact Me</h2>
+     
+      <p class="contact-data common-data"> Feel free to Contact me by submitting the form below and 
+        I will get back to you as soon as possible.</p>
+    </div>
+
+    <section class="contact section">
+      <div class="section-contact-main grid ">
+        <div class=" contact-container ">
+        <form action="https://formspree.io/f/xleqzbry" method="POST">
+          <div class="contact-field">
+            <div>
+              <input class="contact-label" type="text" name="username" id="" autocomplete= "off" required placeholder="Enter your name">
+            </div>
+            <div >
+              <input class="contact-label" type="email" name="email" required placeholder="Enter your email"  autocomplete="off">
+            </div>
+            <div>
+             <textarea cols="30" rows="10" class="contact-label contact-text" name="message" id="" required autocomplete = "off" placeholder="Enter your message"></textarea>
+           </div>
+          </div>
+            <button style="margin-bottom: 20px;"  class="btn">Send Message</button>
+          
+        </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <a href="https://github.com/deeptipoojajyoti/myPortfolio" target="_blank">
+          <div class="footer-data">Copyright ©2024 All rights reserved </div>
+        </a>
+      </div>
+    </footer>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="main.js"></script>
+
+</html>
