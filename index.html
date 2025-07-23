@@ -7,6 +7,31 @@
     <title>Prateek Chauhan</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" href="logo1.png" type="image/icon type">
+    <!-- Add inside <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+  .skill-logo, .skill i {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.skill {
+  border-radius: 24px;
+ 
+  justify-content: flex-start;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+  /* Prevent scaling on hover */
+}
+
+.skill:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(51, 231, 186, 0.15), 0 3px 5px #00ffdd;
+  background: #2a3e39;
+}
+</style>
 
 </head>
 <body>
@@ -37,7 +62,7 @@
                 <div class="hero-section-data">
                     <p class="hero-top-line">Hey!, I'm</p>
                     <h1 class="hero-heading">Prateek Chauhan</h1>
-                    <p class="hero-data">Passionate about Data Analysis, Machine Learning and Data Science.</p>
+                    <p class="hero-data" style="padding:5px;">Learning through building projects.</p>
                     <div class=" button ">
                     <!-- <button class="btn btn-projects project-scroll">View Projects</button> -->
                     <button class="btnIcon btn-projects project-scroll"><a href="https://www.linkedin.com/in/prateek-chauhan-291301218/" target="_blank"><img style="height: 30px; width: 30px;" src="linkedin.png" alt="LinkedIn" /></a></button>
@@ -78,17 +103,19 @@
           <button class="btn btn-contact contact-scroll">Contact</button>
         </div> 
         <div class="about-skill-container">
-          <div class="about-skill">
-            <h3 class="common-heading below481">My Skils</h3>
-            <div class="skill">Excel</div>
-            <div class="skill">SQL</div>
-            <div class="skill">Machine Learning</div>
-            <div class="skill">Problem-Solving</div>
-            <div class="skill">Python</div>
-            <div class="skill">Power bi</div>
-            <div class="skill">Data Visualization</div>
-            <div class="skill">Data Analysis</div>
-            <div class="skill">Fast API</div>
+          
+
+            <div class="about-skill">
+  <h3 class="common-heading below481">My Skils</h3>
+  <div class="skill"><i class="fa-solid fa-database"></i> SQL</div>
+  <div class="skill"><i class="fa-solid fa-robot"></i> Machine Learning</div>
+  <div class="skill"><i class="fa-solid fa-lightbulb"></i> Problem-Solving</div>
+  <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
+  <div class="skill"><i class="fa-solid fa-chart-bar"></i> Power BI</div>
+  <div class="skill"><i class="fa-solid fa-chart-pie"></i> Data Visualization</div>
+  <div class="skill"><i class="fa-solid fa-magnifying-glass-chart"></i> Data Analysis</div>
+  <div class="skill"><i class="fa-solid fa-bolt"></i> Fast API</div>
+</div>
 
             <a href="https://drive.google.com/file/d/196xnjsBOOvc5tDu0H0bqllnjHA7o2Ci4/view?usp=sharing" target="_blank">
               <button class="btn btn-resume">Download Resume</button></a>
@@ -122,7 +149,7 @@
             -  Data cleaning and preprocessing.<br/>
           
           </p>
-          <a href="https://github.com/pratp-123/Edubridge_data_analytics_prateek" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">View Project</button></a>
+          <a href="https://github.com/pratp-123/Edubridge_data_analytics_prateek" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">GitHub Code</button></a>
         </div>
       </div>
      </div>
@@ -130,12 +157,10 @@
 
      <div >
       <div class="conatiner project-section grid-two-col">
-        <div>
-          <img  src="book-recommendation.jpeg" alt="Project Picture" class="project-image " />
-        </div>
+        
         <div class="about-data">
-          <h4 style="margin-top: 50px;" class="project-heading">Book recomendation</h4>
-          <p class="about-full-data project-detail">
+          <h4 style="margin-top: 50px; " class="project-heading">Book recomendation</h4>
+          <p class="about-full-data project-detail" style="margin-left: 50px; ">
         
             📚 Popularity-Based Recommendations: Suggests top trending books based on overall ratings and reviews.<br/>
 🤝 Collaborative Filtering: Provides personalized recommendations by analyzing user preferences and similar readers.<br/>
@@ -143,13 +168,44 @@
 🔍 User-Based & Item-Based Recommendations: Implements similarity-based approaches for better suggestions.<br/>
           
           </p>
-          <a href="https://book-rcmd.onrender.com" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">View Project</button></a>
+          <div>
+            <a href="https://book-rcmd.onrender.com" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">View Project</button></a>
+          <a href="https://github.com/pratp-123/book-rcmd" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">Github code</button></a>
 
+          </div>
+          
+        </div>
+        <div>
+          <img  src="book-recommendation.jpeg" alt="Project Picture" class="project-image " />
         </div>
       </div>
      </div>
    
     
+     <div >
+      <div class="conatiner project-section grid-two-col">
+        <div>
+          <img  src="health-insurance-premiums.jpg" alt="Project Picture" class="project-image " />
+        </div>
+        <div class="about-data">
+          <h4 style="margin-top: 50px;" class="project-heading">Insurance Premium Prediction</h4>
+          <p class="about-full-data project-detail">
+The application allows users to input personal and health details, which are processed by a FastAPI backend to predict the insurance premium category. The prediction is made using a trained machine learning model.<br>
+            Frontend: Streamlit <br>
+Backend: FastAPI <br>
+Machine Learning: Scikit-learn <br>
+Containerization: Docker
+          
+          </p>
+          <div>
+            <a href="https://insurance-premium-vt5ywi9jizbgreedxca4g5.streamlit.app/" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">View Project</button></a>
+          <a href="https://github.com/pratp-123/insurance-premium?tab=readme-ov-file" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">Github code</button></a>
+
+          </div>
+          
+        </div>
+      </div>
+     </div>
     
      
     <div class="contact-top contact-section">
