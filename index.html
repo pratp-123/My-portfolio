@@ -11,6 +11,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <style>
+
+  .contact-label,
+.contact-label:focus,
+.contact-text,
+.contact-text:focus {
+  color: #f6f4f4;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
   .skill-logo, .skill i {
   height: 24px;
   width: 24px;
@@ -218,7 +228,7 @@ Containerization: Docker
     <section class="contact section">
       <div class="section-contact-main grid ">
         <div class=" contact-container ">
-        <form action="https://formspree.io/f/xleqzbry" method="POST">
+        <form action="mailto:prateekchauhan923@gmail.com" method="POST" enctype="text/plain">
           <div class="contact-field">
             <div>
               <input class="contact-label" type="text" name="username" id="" autocomplete= "off" required placeholder="Enter your name">
@@ -230,6 +240,9 @@ Containerization: Docker
              <textarea cols="30" rows="10" class="contact-label contact-text" name="message" id="" required autocomplete = "off" placeholder="Enter your message"></textarea>
            </div>
           </div>
+
+
+          
             <button style="margin-bottom: 20px;"  class="btn">Send Message</button>
           
         </form>
@@ -237,6 +250,8 @@ Containerization: Docker
       </div>
     </section>
 
+
+    
     <footer>
       <div class="footer-container">
         <a href="https://github.com/pratp-123/My-portfolio" target="_blank">
