@@ -292,7 +292,7 @@ and we need to hide the close menu icon
     margin-top: 15px;
     margin-bottom: 30px;
     max-width: 600px;
-    line-height: 15px;
+    line-height: n;
     font-size: 24px;
     letter-spacing: 1.5px;
 
@@ -928,4 +928,255 @@ margin:20px;
   margin-right: 20px;
  text-align: center;
 }
+}
+
+
+.contact-label,
+    .contact-label:focus,
+    .contact-text,
+    .contact-text:focus {
+      color: #f6f4f4;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    .skill-logo,
+    .skill i {
+      height: 24px;
+      width: 24px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .skill {
+      border-radius: 24px;
+
+      justify-content: flex-start;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      /* Prevent scaling on hover */
+    }
+
+    .skill:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 24px rgba(51, 231, 186, 0.15), 0 3px 5px #00ffdd;
+      background: #2a3e39;
+    }
+
+    /* Projects grid & card styles */
+    .projectHeading-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1200px;
+      margin: 24px auto 48px;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 1000px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .project-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 40px rgba(51, 231, 186, 0.12), 0 6px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 16px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%);
+      color: #fff;
+      transform: translateY(100%);
+      transition: transform 0.32s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .project-card:hover .card-overlay {
+      transform: translateY(0%);
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      margin: 0;
+      opacity: 0.95;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    /* make action buttons slightly translucent over overlay */
+    .card-actions .btn {
+      padding: 6px 10px;
+      font-size: 0.9rem;
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 8px;
+    }
+
+    /* ensure text inside card overlay wraps nicely */
+    .card-overlay p {
+      line-height: 1.3;
+    }
+
+    /* always-visible caption under project images */
+    .card-caption {
+      padding: 12px 16px;
+      background: #fff;
+      border-top: 1px solid rgba(0, 0, 0, 0.04);
+      box-sizing: border-box;
+
+      /* smooth hide animation on hover */
+      transition: transform 0.28s ease, opacity 0.28s ease;
+      opacity: 1;
+      transform: translateY(0);
+      z-index: 1;
+    }
+
+    /* hide/move title when project card is hovered (overlay visible) */
+    .project-card:hover .card-caption {
+      opacity: 0;
+      transform: translateY(8px);
+      pointer-events: none;
+    }
+
+    .card-caption h4 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1f2937;
+      /* dark text for readability */
+    }
+
+    /* make action buttons more visible / colorful */
+    .card-actions .btn {
+      padding: 8px 12px;
+      font-size: 0.95rem;
+      background: linear-gradient(90deg, #06b6d4 0%, #10b981 100%);
+      /* cyan -> green */
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.12), 0 2px 6px rgba(6, 182, 212, 0.06);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.22s ease;
+    }
+
+    .card-actions .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 40px rgba(16, 185, 129, 0.16), 0 6px 12px rgba(6, 182, 212, 0.08);
+      opacity: 0.98;
+    }
+
+    /* ensure overlay sits above caption while hovered */
+    .card-overlay {
+      z-index: 2;
+    }
+
+    /* reveal-on-scroll animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+      will-change: transform, opacity;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* small helper for staggered items */
+    .reveal[data-reveal-delay] {
+      /* JS will set transition-delay inline from data attribute */
+    }
+
+.projects-grid {
+  /* keep existing styles */
+}
+
+.project-card.hidden {
+  display: none;
+}
+
+.show-more-container {
+  text-align: center;
+  margin: 2rem auto 4rem;
+}
+.show-more-btn-container {
+  margin-left: 650px;
+}
+.show-more-btn {
+  background: transparent;
+  padding: 16px 32px;
+  border: 3px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--link-color);
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.show-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.16);
 }

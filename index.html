@@ -1,268 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prateek Chauhan</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" href="logo1.png" type="image/icon type">
-    <!-- Add inside <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-<style>
-
-  .contact-label,
-.contact-label:focus,
-.contact-text,
-.contact-text:focus {
-  color: #f6f4f4;
-  border: 1px solid #ccc;
-  outline: none;
-}
-
-  .skill-logo, .skill i {
-  height: 24px;
-  width: 24px;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-
-.skill {
-  border-radius: 24px;
- 
-  justify-content: flex-start;
-  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
-  /* Prevent scaling on hover */
-}
-
-.skill:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 24px rgba(51, 231, 186, 0.15), 0 3px 5px #00ffdd;
-  background: #2a3e39;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prateek Chauhan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/logo1.png" type="image/icon type">
+  <!-- Add inside <head> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
+
 <body>
-    <header class="header sticky">
-        <div class="header-logo-container">
-            <div class="logo-image">
-                <img src="logo1.png" alt="logo image" class="logo">
-            </div>
-            <span class="logo-name">Prateek Chauhan</span> 
-        </div>
-        
-
-        <nav class="navbar">
-            <ul class="navbar-lists">
-                <li><a class="navbar-link home-link" href="#home">Home</a></li>
-                <li><a class="navbar-link about-link" href="#about"  >About</a></li>
-                <li><a class="navbar-link project-link" href="#project" >Projects</a></li>
-                <li><a class="navbar-link contact-link" href="#contact">Contact</a></li></ul>
-        </nav>
-        <div class="mobile-navbar-btn">
-          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
-          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
-        </div>
-    </header>
-    <main>
-        <section class="hero-section section" >
-            <div class="container grid grid-two-col">
-                <div class="hero-section-data">
-                    <p class="hero-top-line">Hey!, I'm</p>
-                    <h1 class="hero-heading">Prateek Chauhan</h1>
-                    <p class="hero-data" style="padding:5px;">Learning through building projects.</p>
-                    <div class=" button ">
-                    <!-- <button class="btn btn-projects project-scroll">View Projects</button> -->
-                    <button class="btnIcon btn-projects project-scroll"><a href="https://www.linkedin.com/in/prateek-chauhan-291301218/" target="_blank"><img style="height: 30px; width: 30px;" src="linkedin.png" alt="LinkedIn" /></a></button>
-                    <button  class="btnIcon btn-projects project-scroll"><a href="https://github.com/pratp-123" target="_blank"><img style="height: 30px; width: 30px;" src="github.png" alt="LinkedIn" /></a></button>
-                  </div>
-                </div>
-                <div class="section-hero-image">
-                    <img src="prateek-photo.JPG" alt="Profile Picture" class="hero-img" />
-                    
-                  </div>
-                  
-            </div>
-        </section>
-    </main>
-
-
-    <div class="about-top about-section">
-      
-     
-      <h2 class="about-heading common-heading">About Me</h2>
-  
-    
-      <p class="about-top-data common-data"> Here you will find more information about me and my skills.</p>
-    </div>
-    <section class="about section">
-      <div class="container grid grid-two-col about-grid">
-        <div class="about-data">
-          <h3 class="common-heading below481">Get to know me!</h3>
-          <p class="about-full-data">
-            I'm a dedicated and enthusiast <b> Data Science, Data Analyst and Machine Learning  </b>with a passion for transforming complex datasets into actionable insights.
-             Check out my work in the <b>Projects</b> section. I have honed my abilities to extract, clean, and analyze data using various tools 
-             like <b>Python</b>, <b>SQL</b> and <b>Excel</b>.
-          
-          <br />
-          
-          With a strong attention to <b>detail</b> and a <b>problem-solving mindset</b>, I'm open to the Job  opportunities where I can apply my analytical skils to tackle real-world challenges. 
-          </p>
-          <button class="btn btn-contact contact-scroll">Contact</button>
-        </div> 
-        <div class="about-skill-container">
-          
-
-            <div class="about-skill">
-  <h3 class="common-heading below481">My Skils</h3>
-  <div class="skill"><i class="fa-solid fa-database"></i> SQL</div>
-  <div class="skill"><i class="fa-solid fa-robot"></i> Machine Learning</div>
-  <div class="skill"><i class="fa-solid fa-lightbulb"></i> Problem-Solving</div>
-  <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
-  <div class="skill"><i class="fa-solid fa-chart-bar"></i> Power BI</div>
-  <div class="skill"><i class="fa-solid fa-chart-pie"></i> Data Visualization</div>
-  <div class="skill"><i class="fa-solid fa-magnifying-glass-chart"></i> Data Analysis</div>
-  <div class="skill"><i class="fa-solid fa-bolt"></i> Fast API</div>
-</div>
-
-            <a href="https://drive.google.com/file/d/1JeBAnuDehmfSDRARt3wiCv7AMDtURDpm/view?usp=drive_link" target="_blank">
-              <button class="btn btn-resume">Download Resume</button></a>
-        </div>
-        </div> 
-        
-        </div>
+  <header class="header sticky">
+    <div class="header-logo-container">
+      <div class="logo-image">
+        <img src="images/logo1.png" alt="logo image" class="logo">
       </div>
+      <span class="logo-name">Prateek Chauhan</span>
+    </div>
 
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul class="navbar-lists">
+        <li><a class="navbar-link home-link" href="#home">Home</a></li>
+        <li><a class="navbar-link about-link" href="#about">About</a></li>
+        <li><a class="navbar-link project-link" href="#project">Projects</a></li>
+        <li><a class="navbar-link contact-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-navbar-btn">
+      <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+      <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section section">
+      <div class="container grid grid-two-col">
+        <div class="hero-section-data">
+          <p class="hero-top-line">Hey!, I'm</p>
+          <h1 class="hero-heading">Prateek Chauhan</h1>
+          <p class="hero-data" style="padding:5px;">A self learner specializing in AI, machine learning, data science, 
+and automation.</p>
+          <div class=" button ">
+            <!-- <button class="btn btn-projects project-scroll">View Projects</button> -->
+            <button class="btnIcon btn-projects project-scroll"><a
+                href="https://www.linkedin.com/in/prateek-chauhan-291301218/" target="_blank"><img
+                  style="height: 30px; width: 30px;" src="images/linkedin.png" alt="LinkedIn" /></a></button>
+            <button class="btnIcon btn-projects project-scroll"><a href="https://github.com/pratp-123"
+                target="_blank"><img style="height: 30px; width: 30px;" src="images/github.png"
+                  alt="LinkedIn" /></a></button>
+          </div>
+        </div>
+        <div class="section-hero-image">
+          <img src="images/prateek-photo.JPG" alt="Profile Picture" class="hero-img" />
+
+        </div>
+
+      </div>
     </section>
+  </main>
 
 
-    <div class="about-top projectHeading-section" >
-      <h2 class="about-heading common-heading">Projects</h2>
-     
-      <p class="about-top-data common-data"> Here you will find some of my personal 
-        projects that I created.</p>
-    </div>
-    <div >
-      <div class="conatiner project-section grid-two-col">
-        <div>
-          <img  src="crop-rec.jfif" alt="Project Picture" class="project-image " />
-        </div>
-        <div class="about-data">
-          <h4 style="margin-top: 50px;" class="project-heading">Crop recomendation system using ML</h4>
-          <p class="about-full-data project-detail">
-           - Predicted crop yield based on soil and weather conditions.<br/>
-           -  <br/>
-           - Different types of ML algorithms evaluated.<br/>
-           - Outlier handling, EDA, Visualization.<br/>
-            -  Data cleaning and preprocessing.<br/>
-          
-          </p>
-          <a href="https://github.com/pratp-123/Edubridge_data_analytics_prateek" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">GitHub Code</button></a>
-        </div>
+<!-- About Section -->
+
+  <div class="about-top about-section">
+
+
+    <h2 class="about-heading common-heading">About Me</h2>
+
+
+    <p class="about-top-data common-data"> Here you will find more information about me and my skills.</p>
+  </div>
+  <section class="about section">
+    <div class="container grid grid-two-col about-grid">
+      <div class="about-data">
+        <h3 class="common-heading below481">Get to know me!</h3>
+        <p class="about-full-data">
+          I'm a dedicated and enthusiast <b> Data Science, Data Analyst and Machine Learning </b>with a passion for
+          transforming complex datasets into actionable insights.
+          Check out my work in the <b>Projects</b> section. I have honed my abilities to extract, clean, and analyze
+          data using various tools
+          like <b>Python</b>, <b>SQL</b> and <b>Excel</b>.
+
+          <br />
+
+          With a strong attention to <b>detail</b> and a <b>problem-solving mindset</b>, I'm open to the Job
+          opportunities where I can apply my analytical skils to tackle real-world challenges.
+        </p>
+        <button class="btn btn-contact contact-scroll">Contact</button>
       </div>
-     </div>
+      <div class="about-skill-container">
 
-
-     <div >
-      <div class="conatiner project-section grid-two-col">
-        
-        <div class="about-data">
-          <h4 style="margin-top: 50px; " class="project-heading">Book recomendation</h4>
-          <p class="about-full-data project-detail" style="margin-left: 50px; ">
-        
-            📚 Popularity-Based Recommendations: Suggests top trending books based on overall ratings and reviews.<br/>
-🤝 Collaborative Filtering: Provides personalized recommendations by analyzing user preferences and similar readers.<br/>
-📊 Data Processing & Analysis: Cleans and preprocesses book datasets for better recommendation accuracy.<br/>
-🔍 User-Based & Item-Based Recommendations: Implements similarity-based approaches for better suggestions.<br/>
-          
-          </p>
-          <div>
-            <a href="https://book-rcmd.onrender.com" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">View Project</button></a>
-          <a href="https://github.com/pratp-123/book-rcmd" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">Github code</button></a>
-
-          </div>
-          
+<!-- Skills Sections -->
+        <div class="about-skill">
+          <h3 class="common-heading below481">My Skils</h3>
+          <div class="skill"><i class="fa-solid fa-database"></i> SQL</div>
+          <div class="skill"><i class="fa-solid fa-robot"></i> Deep Learning</div>
+          <div class="skill"><i class="fa-solid fa-robot"></i> Machine Learning</div>
+          <div class="skill"><i class="fa-solid fa-lightbulb"></i> Problem-Solving</div>
+          <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="skill"><i class="fa-solid fa-chart-bar"></i> Power BI</div>
+          <div class="skill"><i class="fa-solid fa-chart-pie"></i> Data Visualization</div>
+          <div class="skill"><i class="fa-solid fa-magnifying-glass-chart"></i> Data Analysis</div>
+          <div class="skill"><i class="fa-solid fa-bolt"></i> Fast API</div>
         </div>
-        <div>
-          <img  src="book-recommendation.jpeg" alt="Project Picture" class="project-image " />
-        </div>
+
+        <a href="https://drive.google.com/file/d/1JeBAnuDehmfSDRARt3wiCv7AMDtURDpm/view?usp=drive_link" target="_blank">
+          <button class="btn btn-resume">Download Resume</button></a>
       </div>
-     </div>
-   
-    
-     <div >
-      <div class="conatiner project-section grid-two-col">
-        <div>
-          <img  src="health-insurance-premiums.jpg" alt="Project Picture" class="project-image " />
-        </div>
-        <div class="about-data">
-          <h4 style="margin-top: 50px;" class="project-heading">Insurance Premium Prediction</h4>
-          <p class="about-full-data project-detail">
-The application allows users to input personal and health details, which are processed by a FastAPI backend to predict the insurance premium category. The prediction is made using a trained machine learning model.<br>
-            Frontend: Streamlit <br>
-Backend: FastAPI <br>
-Machine Learning: Scikit-learn <br>
-Containerization: Docker
-          
-          </p>
-          <div>
-            <a href="https://insurance-premium-1-vvy3.onrender.com" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">View Project</button></a>
-          <a href="https://github.com/pratp-123/insurance-premium?tab=readme-ov-file" target="_blank"><button style="margin-bottom: 50px;" class="btn btn-project">Github code</button></a>
-
-          </div>
-          
-        </div>
-      </div>
-     </div>
-    
-     
-    <div class="contact-top contact-section">
-      <h2 class="contact-heading common-heading">Contact Me</h2>
-     
-      <p class="contact-data common-data"> Feel free to Contact me by submitting the form below and 
-        I will get back to you as soon as possible.</p>
     </div>
 
-    <section class="contact section">
-      <div class="section-contact-main grid ">
-        <div class=" contact-container ">
+    </div>
+    </div>
+
+  </section>
+
+
+  <div class="about-top projectHeading-section">
+    <h2 class="about-heading common-heading">Projects</h2>
+    <p class="about-top-data common-data"> Here you will find some of my personal projects that I created.</p>
+  </div>
+
+  <!-- Projects grid: 3 cards per row, additional projects wrap to next row -->
+  <section class="projects-grid">
+
+    <!-- Card 0: Boston House Price Prediction (added) -->
+    <article class="project-card">
+      <img src="images/boston.jpg" alt="Boston House Price project image">
+      <div class="card-caption">
+        <h4>Boston House Price Prediction</h4>
+      </div>
+      <div class="card-overlay">
+        <h3 class="card-title">Boston House Price Prediction</h3>
+        <p class="card-desc">EDA, feature engineering and regression modeling (scikit-learn) to predict Boston housing prices. Jupyter notebooks with model comparison and evaluation.</p>
+        <div class="card-actions">
+          <a href="https://boston-housprice.onrender.com" target="_blank" class="btn">View Project</a>
+          <a href="https://github.com/pratp-123/boston-housprice" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 1 -->
+    <article class="project-card">
+      <img src="images/crop-rec.jfif" alt="Crop recommendation project image">
+      <div class="card-caption">
+        <h4>Crop Recommendation System</h4>
+      </div>
+      <div class="card-overlay">
+        <h3 class="card-title">Crop recommendation system using ML</h3>
+        <p class="card-desc">Predicted crop yield based on soil and weather conditions. EDA, preprocessing and model evaluation.</p>
+        <div class="card-actions">
+          <a href="https://github.com/pratp-123/Edubridge_data_analytics_prateek" target="_blank" class="btn">GitHub Code</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="project-card">
+      <img src="images/book-recommendation.jpeg" alt="Book recommendation project image">
+      <div class="card-caption">
+        <h4>Book Recommendation</h4>
+      </div>
+      <div class="card-overlay">
+        <h3 class="card-title">Book recommendation</h3>
+        <p class="card-desc">Popularity-based and collaborative filtering approaches with data cleaning and similarity measures.</p>
+        <div class="card-actions">
+          <a href="https://book-rcmd.onrender.com" target="_blank" class="btn">View Project</a>
+          <a href="https://github.com/pratp-123/book-rcmd" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="project-card">
+      <img src="images/health-insurance-premiums.jpg" alt="Insurance premium project image">
+      <div class="card-caption">
+        <h4>Insurance Premium Prediction</h4>
+      </div>
+      <div class="card-overlay">
+        <h3 class="card-title">Insurance Premium Prediction</h3>
+        <p class="card-desc">Streamlit frontend + FastAPI backend. Scikit-learn model with Docker deployment.</p>
+        <div class="card-actions">
+          <a href="https://insurance-premium-1-vvy3.onrender.com" target="_blank" class="btn">View Project</a>
+          <a href="https://github.com/pratp-123/insurance-premium?tab=readme-ov-file" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Add new project cards here — grid will automatically place them on next rows -->
+  </section>
+  <div class="show-more-btn-container">
+    <button class="btn show-more-btn">Show More Projects</button>
+  </div>
+
+
+  <div class="contact-top contact-section">
+    <h2 class="contact-heading common-heading">Contact Me</h2>
+
+    <p class="contact-data common-data"> Feel free to Contact me by submitting the form below and
+      I will get back to you as soon as possible.</p>
+  </div>
+
+  <section class="contact section">
+    <div class="section-contact-main grid ">
+      <div class=" contact-container ">
         <form action="mailto:prateekchauhan923@gmail.com" method="POST" enctype="text/plain">
           <div class="contact-field">
             <div>
-              <input class="contact-label" type="text" name="username" id="" autocomplete= "off" required placeholder="Enter your name">
-            </div>
-            <div >
-              <input class="contact-label" type="email" name="email" required placeholder="Enter your email"  autocomplete="off">
+              <input class="contact-label" type="text" name="username" id="" autocomplete="off" required
+                placeholder="Enter your name">
             </div>
             <div>
-             <textarea cols="30" rows="10" class="contact-label contact-text" name="message" id="" required autocomplete = "off" placeholder="Enter your message"></textarea>
-           </div>
+              <input class="contact-label" type="email" name="email" required placeholder="Enter your email"
+                autocomplete="off">
+            </div>
+            <div>
+              <textarea cols="30" rows="10" class="contact-label contact-text" name="message" id="" required
+                autocomplete="off" placeholder="Enter your message"></textarea>
+            </div>
           </div>
 
 
-          
-            <button style="margin-bottom: 20px;"  class="btn">Send Message</button>
-          
+
+          <button style="margin-bottom: 20px;" class="btn">Send Message</button>
+
         </form>
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-    
-    <footer>
-      <div class="footer-container">
-        <a href="https://github.com/pratp-123/My-portfolio" target="_blank">
-          <div class="footer-data">Copyright ©2024 All rights reserved </div>
-        </a>
-      </div>
-    </footer>
+
+  <footer>
+    <div class="footer-container">
+      <a href="https://github.com/pratp-123/My-portfolio" target="_blank">
+        <div class="footer-data">Copyright ©2024 All rights reserved </div>
+      </a>
+    </div>
+  </footer>
 
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="main.js"></script>
+<script>
+    // reveal-on-scroll using IntersectionObserver
+    document.addEventListener('DOMContentLoaded', () => {
+      const toReveal = [];
+
+      // add groups of selectors you want to animate
+      const selectors = [
+        '.hero-section .hero-section-data',
+        '.hero-img',
+        '.about-top',
+        '.about .about-data',
+        '.about-skill .skill',
+        '.projectHeading-section',
+        '.projects-grid .project-card',
+        '.card-caption',
+        '.contact-top',
+        '.contact-container'
+      ];
+
+      // collect elements from selectors
+      selectors.forEach(sel => {
+        document.querySelectorAll(sel).forEach(el => toReveal.push(el));
+      });
+
+      // ensure unique & apply base class
+      const uniq = Array.from(new Set(toReveal));
+      uniq.forEach((el, idx) => {
+        el.classList.add('reveal');
+      });
+
+      // stagger skills and project cards for nicer effect
+      document.querySelectorAll('.about-skill .skill').forEach((el, i) => {
+        el.dataset.revealDelay = i * 60; // ms
+      });
+      document.querySelectorAll('.projects-grid .project-card').forEach((el, i) => {
+        el.dataset.revealDelay = 120 + i * 80;
+      });
+
+      // observer
+      const io = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const delay = el.dataset.revealDelay ? parseInt(el.dataset.revealDelay, 10) : 0;
+            if (delay) el.style.transitionDelay = delay + 'ms';
+            el.classList.add('active');
+            observer.unobserve(el);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      uniq.forEach(el => io.observe(el));
+    });
+  </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const projectCards = document.querySelectorAll('.project-card');
+    const showMoreBtn = document.querySelector('.show-more-btn');
+    const cardsPerPage = 3;
+    let visibleCards = cardsPerPage;
+
+    // Initially hide cards beyond the first 3
+    function initializeCards() {
+      projectCards.forEach((card, index) => {
+        if (index >= cardsPerPage) {
+          card.classList.add('hidden');
+        }
+      });
+      
+      // Hide button if we have 3 or fewer projects
+      if (projectCards.length <= cardsPerPage) {
+        showMoreBtn.style.display = 'none';
+      }
+    }
+
+    // Show more cards when clicked
+    showMoreBtn.addEventListener('click', () => {
+      for (let i = visibleCards; i < visibleCards + cardsPerPage; i++) {
+        if (projectCards[i]) {
+          projectCards[i].classList.remove('hidden');
+        }
+      }
+      
+      visibleCards += cardsPerPage;
+      
+      // Hide button if all cards are visible
+      if (visibleCards >= projectCards.length) {
+        showMoreBtn.style.display = 'none';
+      }
+    });
+
+    initializeCards();
+  });
+</script>
 
 </html>
