@@ -44,8 +44,11 @@
         <div class="hero-section-data">
           <p class="hero-top-line">Hey!, I'm</p>
           <h1 class="hero-heading">Prateek Chauhan</h1>
-          <p class="hero-data" style="padding:5px;">A self learner specializing in AI, machine learning, data science, 
-and automation.</p>
+          <p class="hero-data" style="padding:5px;">
+            <span>A self learner specializing in</span>
+            <span class="typed-text" aria-live="polite"></span>
+            <span class="typed-cursor">|</span>
+          </p>
           <div class=" button ">
             <!-- <button class="btn btn-projects project-scroll">View Projects</button> -->
             <button class="btnIcon btn-projects project-scroll"><a
@@ -71,7 +74,7 @@ and automation.</p>
   <div class="about-top about-section">
 
 
-    <h2 class="about-heading common-heading">About Me</h2>
+    <h2 class="about-heading common-heading text-center">About Me</h2>
 
 
     <p class="about-top-data common-data"> Here you will find more information about me and my skills.</p>
@@ -110,7 +113,7 @@ and automation.</p>
           <div class="skill"><i class="fa-solid fa-bolt"></i> Fast API</div>
         </div>
 
-        <a href="https://drive.google.com/file/d/1JeBAnuDehmfSDRARt3wiCv7AMDtURDpm/view?usp=drive_link" target="_blank">
+        <a href="https://flowcv.com/resume/wwee87vvk4b9" target="_blank">
           <button class="btn btn-resume">Download Resume</button></a>
       </div>
     </div>
@@ -212,6 +215,36 @@ and automation.</p>
     <button class="btn show-more-btn">Show More Projects</button>
   </div>
 
+  <div class="about-top blog-top">
+    <h2 class="about-heading common-heading">Blogs</h2>
+    <p class="about-top-data common-data">Insights on AI, RAG, data science, and practical learning through experimentation.</p>
+  </div>
+
+  <section class="blog-section-modern">
+    <div class="blog-grid">
+      <article class="blog-card">
+        <div class="blog-tag">RAG</div>
+        <h3>Measuring the accuracy of a RAG (Retrieval-Augmented Generation)</h3>
+        <p>Practical methods to evaluate retrieval quality, answer relevance, and end-to-end performance of RAG systems.</p>
+        <div class="blog-meta">
+          <span>Prateek Chauhan</span>
+          <span>AI</span>
+        </div>
+        <a href="https://medium.com/@prateekchauhan923/measuring-the-accuracy-of-a-rag-retrieval-augmented-generation-ac86d8e9389c" target="_blank" class="btn blog-btn">Read Article</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">Python</div>
+        <h3>How to Identify and Remove Outliers: A Step-by-Step Tutorial with Python</h3>
+        <p>A clear walkthrough of detecting anomalies using statistical techniques and cleaning data before model building.</p>
+        <div class="blog-meta">
+          <span>Prateek Chauhan</span>
+          <span>Data Science</span>
+        </div>
+        <a href="https://medium.com/@prateekchauhan923/how-to-identify-and-remove-outliers-a-step-by-step-tutorial-with-python-738a103ae666" target="_blank" class="btn blog-btn">Read Article</a>
+      </article>
+    </div>
+  </section>
 
   <div class="contact-top contact-section">
     <h2 class="contact-heading common-heading">Contact Me</h2>
@@ -316,6 +349,46 @@ and automation.</p>
       uniq.forEach(el => io.observe(el));
     });
   </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const typedText = document.querySelector('.typed-text');
+    const techStack = ['AI', 'machine learning', 'data science', 'Gen AI', 'LangChain'];
+    let techIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeTech() {
+      const currentTech = techStack[techIndex];
+
+      if (!isDeleting) {
+        charIndex++;
+        typedText.textContent = currentTech.slice(0, charIndex);
+
+        if (charIndex === currentTech.length) {
+          isDeleting = true;
+          setTimeout(typeTech, 1500);
+          return;
+        }
+      } else {
+        charIndex--;
+        typedText.textContent = currentTech.slice(0, charIndex);
+
+        if (charIndex === 0) {
+          isDeleting = false;
+          techIndex = (techIndex + 1) % techStack.length;
+        }
+      }
+
+      const speed = isDeleting ? 60 : 120;
+      setTimeout(typeTech, speed);
+    }
+
+    if (typedText) {
+      typeTech();
+    }
+  });
+</script>
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('.project-card');
