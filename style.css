@@ -299,7 +299,6 @@ and we need to hide the close menu icon
 
   .typed-text {
     display: inline-block;
-    min-width: 230px;
     color: var(--main-color);
     font-weight: 600;
   }
@@ -308,7 +307,7 @@ and we need to hide the close menu icon
     display: inline-block;
     color: var(--main-color);
     animation: blink 0.8s step-end infinite;
-    margin-left: 4px;
+    margin-left: 2px;
   }
 
   @keyframes blink {
@@ -1438,7 +1437,6 @@ h1 {
 }
 
 .typed-text {
-  min-width: 220px;
   color: var(--main-color);
 }
 
