@@ -21,6 +21,7 @@ mobile_nav.addEventListener("click", () => toggleNavbar());
 
 const heroSection = document.querySelector(".hero-section");
 const aboutSection = document.querySelector(".about-section");
+const educationSection = document.querySelector(".education-section");
 const projectSection = document.querySelector(".projectHeading-section");
 const contactSection = document.querySelector(".contact-section");
 
@@ -30,6 +31,10 @@ document.querySelector(".home-link").addEventListener("click",() => {
 
 document.querySelector(".about-link").addEventListener("click",() => {
   aboutSection.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".education-link").addEventListener("click",() => {
+  educationSection.scrollIntoView({behavior: "smooth"});
 });
 
 document.querySelector(".project-link").addEventListener("click",() => {
@@ -47,5 +52,4 @@ document.querySelector(".contact-scroll").addEventListener("click",() => {
 document.querySelector(".project-scroll").addEventListener("click",() => {
   projectSection.scrollIntoView({behavior: "smooth"});
 })
-
 
